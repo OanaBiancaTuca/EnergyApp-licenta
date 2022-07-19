@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SeteazaCostFacturaActivity"
+    android:background="@color/myWhite">
+
+
+        <ImageButton
+            android:id="@+id/btnBack_seteazaCostFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_1sdp"
+            android:src="@drawable/ic_back_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/imageView_seteazaCostFactura"
+            app:layout_constraintEnd_toStartOf="@id/imageView_seteazaCostFactura"/>
+
+
+
+        <ImageView
+            android:id="@+id/imageView_seteazaCostFactura"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/cost"
+            app:layout_constraintEnd_toStartOf="@+id/tv_titlu_seteazaCostFactura"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_titlu_seteazaCostFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_48sdp"
+            android:text="Costuri"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView_seteazaCostFactura"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/constraintLayout2_seteazaCost"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/constraintLayout2_seteazaCost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView_seteazaCostFactura"
+            app:layout_constraintBottom_toTopOf="@id/switch1_costMediu_seteazaCostFactura"
+            android:background="@drawable/shape_edittext01"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:cardUseCompatPadding="true">
+            <TextView
+                android:id="@+id/tv_consumTotal_seteazaCostFactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:text="Consum total:"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/tv_costFactura_seteazaCostFactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:text="Cost factura:"
+                app:layout_constraintTop_toBottomOf="@id/tv_consumTotal_seteazaCostFactura"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/tv_costKWh_seteazaCostFactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:text="Cost KWh:"
+                app:layout_constraintTop_toBottomOf="@id/tv_costFactura_seteazaCostFactura"
+                app:layout_constraintStart_toStartOf="parent"
+               />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/folosesc_pretul_mediu_seteazaCostFactura"
+        android:textColor="?android:attr/textColorHint"
+        android:textColorHighlight="@color/myGreen"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2_seteazaCost"/>
+
+        <Switch
+            android:id="@+id/switch1_costMediu_seteazaCostFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:shadowColor="#FFFFFF"
+            android:textColor="?android:attr/textColorHint"
+            android:textColorHighlight="@color/myGreen"
+            android:textColorLink="@color/myGreen"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:thumbTint="@color/myGreen"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2_seteazaCost"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+        <Switch
+            android:id="@+id/switch2_costManual_seteazaCostFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:shadowColor="#FFFFFF"
+            android:text="Introduc manual costul"
+            android:textColor="?android:attr/textColorHint"
+            android:textColorHighlight="@color/myGreen"
+            android:textColorLink="@color/myGreen"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:thumbTint="@color/myGreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch1_costMediu_seteazaCostFactura" />
+
+        <Switch
+            android:id="@+id/switch3_costDinLista_seteazaCostFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:shadowColor="#FFFFFF"
+            android:text="Selectez din lista furnizata"
+            android:textColor="?android:attr/textColorHint"
+            android:textColorHighlight="@color/myGreen"
+            android:textColorLink="@color/myGreen"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:thumbTint="@color/myGreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch2_costManual_seteazaCostFactura" />
+
+        <TextView
+            android:id="@+id/tv_detaliiMetodaAleasa_seteazaCostFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switch3_costDinLista_seteazaCostFactura" />
+
+        <EditText
+            android:id="@+id/et_introduCost_seteazaCostFactura"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:hint="Introduceti "
+            android:inputType="numberDecimal"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_detaliiMetodaAleasa_seteazaCostFactura"
+            app:layout_goneMarginTop="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            />
+
+        <com.royrodriguez.transitionbutton.TransitionButton
+            android:id="@+id/btnSalveazaCost_seteazaCostFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_buttonlogin"
+            android:gravity="center"
+            android:text="Salvează"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@id/et_introduCost_seteazaCostFactura"
+            app:layout_constraintTop_toBottomOf="@id/tv_detaliiMetodaAleasa_seteazaCostFactura"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/_10sdp"
+            app:defaultColor="#31B247"
+            app:loaderColor="@android:color/white"
+            android:textColor="@android:color/white"/>
+
+        <Spinner
+            android:id="@+id/spinnerZona_seteazaCostFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:background="@drawable/spinner_style"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_detaliiMetodaAleasa_seteazaCostFactura"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:entries="@array/Zona"/>
+        <ImageButton
+            android:id="@+id/imageButtonNext_seteazaCostFactura"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/spinnerZona_seteazaCostFactura"
+            app:layout_constraintTop_toBottomOf="@id/tv_detaliiMetodaAleasa_seteazaCostFactura"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+
+            />
+
+
+        <Spinner
+            android:id="@+id/spinnerOfertePret_seteazaCostFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_style"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerZona_seteazaCostFactura"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+          />
+        <com.royrodriguez.transitionbutton.TransitionButton
+            android:id="@+id/btnSalveazaCostDinListaFurnizata_seteazaCostFactura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_buttonlogin"
+            android:gravity="center"
+            android:text="Salveaza"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/spinnerOfertePret_seteazaCostFactura"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp"
+            app:defaultColor="#31B247"
+            app:loaderColor="@android:color/white"
+            android:textColor="@android:color/white" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

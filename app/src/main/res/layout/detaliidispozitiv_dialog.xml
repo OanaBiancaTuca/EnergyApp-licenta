@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_marginStart="@dimen/_1sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_310sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/imageView_dialogDetaliiDispozitiv"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:src="@drawable/devices"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInformatii_dialogDetaliiDispozitiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Informatii"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintStart_toEndOf="@id/imageView_dialogDetaliiDispozitiv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider1_dialogDetaliiDispozitiv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView_dialogDetaliiDispozitiv" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_dialogDetaliiDispozitiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_copy_dialogDetaliiDispozitiv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider1_dialogDetaliiDispozitiv"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tip dispozitiv:"
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+
+                    android:id="@+id/tv_tipDispozitiv_dialogDetaliiDispozitiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clasa:"
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+                    android:id="@+id/tv_clasaDispozitiv_dialogDetaliiDispozitiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/linearLayoutPutere_dialogDetaliiDispozitiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Putere:"
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+                    android:id="@+id/tv_putereDispozitiv_dialogDetaliiDispozitiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_detaliiDispozitiv"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Vezi detalii consum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textColorHighlight="@color/myGreen"
+                android:textColorLink="@color/myGreen"
+                android:textStyle="bold"
+                android:thumbTint="@color/myGreen"
+                />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/linearLayoutZilnic_dialogDetaliiDispozitiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consum zilnic: "
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+                    android:id="@+id/tv_zilnic_dialogDetaliiDispozitiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/linearLayoutLunar_dialogDetaliiDispozitiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consum lunar: "
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+                    android:id="@+id/tv_lunar_dialogDetaliiDispozitiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/linearLayoutAnual_dialogDetaliiDispozitiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consum anual: "
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+                    android:id="@+id/tv_anual_dialogDetaliiDispozitiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/btn_copy_dialogDetaliiDispozitiv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+        />
+
+        <Button
+            android:id="@+id/btn_copy_dialogDetaliiDispozitiv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="Copiază Detalii"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider9"
+            android:layout_marginEnd="@dimen/_10sdp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_close_dialogDetaliiDispozitiv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="Închide"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_49sdp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutPutere_dialogDetaliiDispozitiv"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="NotSibling" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

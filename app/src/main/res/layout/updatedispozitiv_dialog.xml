@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/_10sdp">
+
+
+    <TextView
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/tvOreFunct_editeazaDispozitiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvOreFunct_adaugaDispozitiv"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayout_oreFunctionare_editeazaDispozitiv"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNrOreFunctionare_editeazaDispozitiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sdp"
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@id/tvOreFunct_editeazaDispozitiv"
+            android:inputType="number"
+            android:textColor="@color/myGreen"/>
+        <TextView
+            android:id="@+id/tvNrOreLeg_editeazaDispozitiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:text=" ore și  "
+            app:layout_constraintStart_toEndOf="@id/tvOreFunct_editeazaDispozitiv" />
+
+        <TextView
+            android:id="@+id/tvNrMinFunctionare_editeazaDispozitiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sdp"
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@id/tvNrOreLeg_editeazaDispozitiv"
+            android:inputType="number"
+            android:clickable="true"
+            android:editable="true"
+            android:textColor="@color/myGreen"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:text="  minute"
+            app:layout_constraintStart_toEndOf="@id/tvOreFunct_editeazaDispozitiv" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Switch
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/switch_editeazaDispozitiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#FFFFFF"
+        android:text="Selectez intervalul de funcționare"
+        android:textColorHighlight="@color/myGreen"
+        android:textColorLink="@color/myGreen"
+        android:textSize="@dimen/_15sdp"
+        android:thumbTint="@color/myGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_oreFunctionare_editeazaDispozitiv" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvDela_editeazaDispozitiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvDela_adaugaDispozitiv"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOreFunct_editeazaDispozitiv" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnDela_editeazaDispozitiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/btnDela_adaugaDispozitiv"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvDela_editeazaDispozitiv"
+        app:layout_constraintTop_toBottomOf="@id/tvOreFunct_editeazaDispozitiv" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvPanala_editeazaDispozitiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvPanala_adaugaDispozitiv"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDela_editeazaDispozitiv" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnPanala_editeazaDispozitiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/btnPanala_adaugaDispozitiv"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toEndOf="@id/tvPanala_editeazaDispozitiv"
+        app:layout_constraintTop_toBottomOf="@id/tvDela_editeazaDispozitiv" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/linearLayout_editeazaDispozitiv"
+        app:layout_constraintTop_toBottomOf="@id/btnPanala_editeazaDispozitiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/tvNumarDispozitiveIdentice_editeazaDispozitiv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/tvNumarDispozitiveIdentice_adaugaDispozitiv"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etNrDispozitiveIdentice_editeazaDispozitiv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintStart_toEndOf="@id/tvNumarDispozitiveIdentice_editeazaDispozitiv"
+            app:layout_constraintTop_toBottomOf="@id/btnPanala_editeazaDispozitiv" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_editeazaDispozitiv"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/tvModFunctionare_editeazaDispozitiv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tvModFunctionare_adaugaDispozitiv"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rgModFunctionare_editeazaDispozitiv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rbtZilnic_editeazaDispozitiv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rbtZilnic_adaugaDispozitiv"
+                android:textSize="@dimen/_12sdp" />
+
+            <RadioButton
+                android:id="@+id/rbtSaptamanal_editeazaDispozitiv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtSaptamanal_adaugaDispozitiv"
+                android:textSize="@dimen/_12sdp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSalveaza_editeazaDispozitiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_buttonlogin"
+        android:text="@string/btnAdauga_editeazaIncapere"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:padding="@dimen/_10sdp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

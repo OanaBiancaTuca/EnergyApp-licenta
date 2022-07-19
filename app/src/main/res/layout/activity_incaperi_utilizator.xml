@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".activities.IncaperiUtilizatorActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarRl_incaperiUtilizator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/shape_toolbarlogin01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack_listViewIncaperi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tooltipText="Înapoi"/>
+
+        <TextView
+            android:id="@+id/tv_incaperi_listViewIncaperi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/tv_incaperi_listViewIncaperi"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+        <TextView
+            android:id="@+id/tv_consum_listViewIncaperi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:gravity="center"
+            android:text="Consum"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_incaperi_listViewIncaperi"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imgBtnAdd_listViewIncaperi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.695"
+            app:layout_constraintStart_toEndOf="@id/tv_incaperi_listViewIncaperi"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tooltipText="Adaugă încăpere"
+            android:contentDescription="Adaugă încăpere"
+            android:contextClickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_5sdp"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listView_listViewIncaperi"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

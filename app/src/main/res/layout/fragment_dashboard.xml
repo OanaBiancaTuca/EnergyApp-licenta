@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DashboardFragment">
+
+    <View
+        android:id="@+id/toolbarRl_dashboardFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--        android:background="@drawable/shape_toolbarlogin01"-->
+
+    <ImageButton
+        android:id="@+id/btnLogout_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_logout_dashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgLogo_dashboard"
+        android:layout_width="@dimen/_71sdp"
+        android:layout_height="@dimen/_71sdp"
+        android:layout_marginStart="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/tvAcasa_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/tvAcasa_dashboard"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintStart_toEndOf="@id/imgLogo_dashboard"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserDetails_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:text="@string/tvUserDetails_dashboard"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/imgLogo_dashboard"
+        app:layout_constraintTop_toTopOf="@id/tvAcasa_dashboard" />
+
+    <GridLayout
+        android:id="@+id/gridLayout_dashboardFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="@dimen/_10sdp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbarRl_dashboardFragment"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_casaMea_dashboardFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/_1sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/casa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvCasaMea_dashboard"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_costuri_dashboardFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/_1sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/cost" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvCost_dashboard"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_sfaturi_dashboardFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/_1sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/tips" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvSfaturi_dashboard"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_simulator_dashboardFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/_1sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/simulator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvSimulator_dashboard"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_ghid_dashboardFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="@dimen/_1sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvGhid_dashboard"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_rowWeight="1"-->
+        <!--            android:layout_columnWeight="1"-->
+        <!--            android:layout_marginLeft="16dp"-->
+        <!--            android:layout_marginRight="16dp"-->
+        <!--            android:layout_marginBottom="16dp"-->
+        <!--            android:background="@color/cardColor"-->
+        <!--            app:cardCornerRadius="8dp"-->
+        <!--            app:cardElevation="6dp">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center_horizontal|center_vertical"-->
+        <!--                android:layout_margin="16dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_gravity="center_horizontal"-->
+        <!--                    android:background="@drawable/dormitor"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Course Plan"-->
+        <!--                    android:layout_marginTop="8dp"-->
+        <!--                    android:textColor="@color/textcardColor"-->
+        <!--                    android:textSize="14sp"-->
+        <!--                    android:textStyle="bold"/>-->
+        <!--            </LinearLayout>-->
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

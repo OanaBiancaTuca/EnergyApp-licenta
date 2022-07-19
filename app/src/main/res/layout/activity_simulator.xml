@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SimulatorActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarRl_simulator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:background="@drawable/shape_toolbarlogin01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack_simulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_simulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/tv_simulator"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_simulator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRl_simulator"
+
+        >
+
+        <TextView
+            android:id="@+id/tvTip_adaugaDispozitiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/tvTip_simulator"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spnTipDispozitiv_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:entries="@array/tipDispozitivSimulator"
+            android:padding="@dimen/_10sdp"
+            android:scrollbarSize="@dimen/_100sdp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etTipDispozitiv_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/shape_edittext01"
+            android:hint="@string/etTipDispozitiv_adaugaDispozitiv"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spnTipDispozitiv_simulator" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2_simultor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etTipDispozitiv_simulator">
+
+            <Spinner
+                android:id="@+id/spnPutere_simulator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/consumPutere"
+                android:padding="@dimen/_20sdp"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etTipDispozitiv_simulator" />
+
+            <EditText
+                android:id="@+id/etPutere_simulator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/etPutere_adaugaDispozitiv"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toStartOf="@id/tvUnitate_adaugaDispozitiv"
+                app:layout_constraintStart_toEndOf="@id/spnPutere_adaugaDispozitiv"
+                app:layout_constraintTop_toBottomOf="@id/etTipDispozitiv_simulator" />
+
+            <TextView
+                android:id="@+id/tvUnitate_simulator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:text="@string/tvUnitate_adaugaDispozitiv"
+                android:textAlignment="center"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintStart_toEndOf="@id/etPutere_simulator"
+                app:layout_constraintTop_toBottomOf="@id/etTipDispozitiv_simulator" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/tvArata_simulator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="5"
+                android:text="Afișează dispozitivele mele"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/arrow_simulator"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                app:layout_constraintHorizontal_bias="0.866" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

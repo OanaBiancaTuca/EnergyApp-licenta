@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "179686999603",
+    "project_id": "energy-app-51d1e",
+    "storage_bucket": "energy-app-51d1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179686999603:android:23900ae4eb531e63dd4546",
+        "android_client_info": {
+          "package_name": "com.example.energyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179686999603-qbj8udri48b4t7ukl496h0stpabvs5se.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.energyapp",
+            "certificate_hash": "e11246f2992feda3e3554c6f948e61f7b6a76543"
+          }
+        },
+        {
+          "client_id": "179686999603-23fu3qmo8mmvgf25lh5bv2fjce8ce5eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD04OTb0I_6jL3G7n8mJgPHnJXPVs_GW8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179686999603-23fu3qmo8mmvgf25lh5bv2fjce8ce5eg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

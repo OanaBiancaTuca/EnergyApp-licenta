@@ -1,0 +1,238 @@
+<resources>
+    <string name="app_name">EnergyApp</string>
+    <string name="tvAppName_splash">Energy App</string>
+    <string name="tvWelcome_main">Welcome to Energy App</string>
+    <string name="btnSkip_main">Continuă fără logare</string>
+    <string name="btnLogin_main">LOGARE</string>
+    <string name="tvPleaseLogin_login">Bine ai venit!</string>
+    <string name="etEmail_login">Email</string>
+    <string name="etPassword_login">Parolă</string>
+    <string name="fotvForgotPassword_login">Ai uitat parola ?</string>
+    <string name="tvNewUser_login">Utilizator nou? <b>Înregistrează-te aici</b></string>
+    <string name="tvCreateAccount_register">Creează un cont nou</string>
+    <string name="etName_register">Nume</string>
+    <string name="etConfirmPassword_register">Confirmă Parola</string>
+    <string name="btnRegister_register">ÎNREGISTREAZĂ-TE</string>
+    <string name="tvAcasa_dashboard">ACASĂ</string>
+    <string name="tvUserDetails_dashboard">abc@example.com</string>
+    <string name="tvForgotPassword_forgotpassword">Resetează parola</string>
+    <string name="tvDetails_forgotPassword">Introduceți emailul înregistrat, pentru a primi detaliile de resetare</string>
+    <string name="btnSubmit_forgotpassword">TRIMITE</string>
+    <string name="tvCasaMea_dashboard">CASA MEA</string>
+    <string name="tvCost_dashboard">COSTURI</string>
+    <string name="tvSfaturi_dashboard">SFATURI</string>
+    <string name="tvSimulator_dashboard">SIMULATOR</string>
+    <string name="tvGhid_dashboard">GHID</string>
+    <string name="menuHome">ACASA</string>
+    <string name="menuAccount">PROFIL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tv_incaperi_listViewIncaperi">Încăperile mele</string>
+
+    <!--    -->
+    <!--    //IncapereItemList-->
+
+    <string name="tv_name_incapereIntemList">Incăpere item name</string>
+    <string name="tv_consum_incapereItemList">0 WAȚI</string>
+    <string name="tv_cost_incapereItemList">0 lei/Lunar</string>
+    <string name="tv_nrDispozitive_incapereItemList">0 dispozitive</string>
+
+    <!--    editeaza incapere-->
+    <string name="etIncapere_editeazaIncapere">Denumire</string>
+    <string name="btnAdauga_editeazaIncapere">SALVEAZĂ</string>
+    <string name="tv_incaperi_adaugaIncapere">Adaugă o încăpere</string>
+    <string name="etIncapere_adaugaIncapere">Denumire</string>
+    <string name="btnAdauga_adaugaIncapere">ADAUGĂ</string>
+    <array name="tipIncapere">
+        <item>Dormitor</item>
+        <item>Bucătărie</item>
+        <item>Grădină</item>
+        <item>Garaj</item>
+        <item>Balcon</item>
+        <item>Hol</item>
+        <item>Baie</item>
+        <item>Living</item>
+        <item>Alt tip</item>
+    </array>
+    <!--dispozitiv item list-->
+    <string name="tv_name_dispozitivIntemList">Denumire</string>
+    <string name="tv_nrDispozitive_dispozitiveItemList">0 dispozitive</string>
+    <string name="tv_timpUtilizare_dispozitiveItemList">0 minute</string>
+    <string name="tv_consum_dispozitiveItemList">0 WAȚI</string>
+    <string name="tv_cost_dispozitiveItemList">0 lei/Lunar</string>
+
+    <!--    adauga dispozitiv-->
+    <string name="tvDispozitiv_adaugaDispozitiv">Adaugă dispozitiv</string>
+    <string name="tvTip_adaugaDispozitiv">Tip dispozitiv:</string>
+    <string name="etTipDispozitiv_adaugaDispozitiv">Tastați tipul dispozitivului</string>
+    <string name="tvClasaEnergetica_adaugaDispozitiv">Clasa energetică:</string>
+    <string name="etPutere_adaugaDispozitiv">Putere</string>
+    <string name="tvUnitate_adaugaDispozitiv">W</string>
+    <string name="tvOreFunct_adaugaDispozitiv">Ore funcționare:</string>
+    <string name="tvDela_adaugaDispozitiv">De la:</string>
+    <string name="btnDela_adaugaDispozitiv">Selecteaza</string>
+    <string name="tvPanala_adaugaDispozitiv">Pana la:</string>
+    <string name="btnPanala_adaugaDispozitiv">Selecteaza</string>
+    <string name="tvNumarDispozitiveIdentice_adaugaDispozitiv">Număr dispozitive:</string>
+    <string name="tvModFunctionare_adaugaDispozitiv">Mod utilizare:</string>
+    <string name="rbtZilnic_adaugaDispozitiv">Zilnic</string>
+    <string name="rbtSaptamanal_adaugaDispozitiv">Saptamanal</string>
+    <string name="tv_incaperi_listViewDispozitive">Dispozitive</string>
+    <string name="folosesc_pretul_mediu_seteazaCostFactura">Folosesc prețul mediu de 1.65 lei</string>
+
+
+    <array name="tipDispozitiv">
+        <item>Selectați</item>
+        <item>Televizor</item>
+        <item>Aer condiționat</item>
+        <item>Frigider</item>
+        <item>Mașină de spălat</item>
+        <item>Laptop</item>
+        <item>Calculator</item>
+        <item>Bec</item>
+        <item>Lampă</item>
+        <item>Cuptor</item>
+        <item>Uscător de păr</item>
+        <item>Fier de călcat</item>
+        <item>Alt tip</item>
+    </array>
+    <array name="tipDispozitivSimulator">
+        <item>Selectați</item>
+        <item>Televizor</item>
+        <item>Aer condiționat</item>
+        <item>Frigider</item>
+        <item>Mașină de spălat</item>
+        <item>Laptop</item>
+        <item>Calculator</item>
+        <item>Bec</item>
+        <item>Lampă</item>
+        <item>Cuptor</item>
+        <item>Uscător de păr</item>
+        <item>Fier de călcat</item>
+        <item>Căutați după descriere</item>
+    </array>
+
+    <array name="consumPutere">
+        <item>Putere</item>
+        <item>Consum</item>
+    </array>
+
+    <array name="clasaDispozitiv">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+    </array>
+
+    <!--    Seteaza cost factura-->
+    <array name="Zona">
+        <item>Zona</item>
+        <item>Banat</item>
+        <item>Dobrogea</item>
+        <item>Muntenia Sud</item>
+        <item>Muntenia Nord</item>
+        <item>Moldova</item>
+        <item>Oltenia</item>
+        <item>Transilvania Sud</item>
+        <item>Transilvania Nord</item>
+    </array>
+    <array name="Banat">
+        <item>Enel Energie 1.44 lei</item>
+        <item>ELECTRICA FURNIZARE S.A. 1.59 lei</item>
+        <item>EON Energie Romania 1.85 lei</item>
+    </array>
+
+    <array name="Dobrogea">
+        <item>Enel Energie 1.49 lei</item>
+        <item>ELECTRICA FURNIZARE S.A. 1.64 lei</item>
+        <item>EON Energie Romania 1.90 lei</item>
+    </array>
+    <array name="MunteniaSud">
+        <item>Enel Energie 1.42 lei</item>
+        <item>ELECTRICA FURNIZARE S.A. 1.58 lei</item>
+        <item>EON Energie Romania 1.83 lei</item>
+    </array>
+
+    <array name="MunteniaNord">
+        <item>Enel Energie 1.48 lei</item>
+        <item>ELECTRICA FURNIZARE S.A. 1.64 lei</item>
+        <item>EON Energie Romania 1.89 lei</item>
+    </array>
+    <array name="Moldova">
+        <item>Enel Energie 1.48 lei</item>
+        <item>ELECTRICA FURNIZARE S.A. 1.64 lei</item>
+        <item>EON Energie Romania 1.89 lei</item>
+    </array>
+    <array name="Oltenia">
+        <item>Enel Energie 1.50 lei</item>
+        <item>ELECTRICA FURNIZARE S.A. 1.66 lei</item>
+        <item>EON Energie Romania 1.94 lei</item>
+    </array>
+    <array name="TransilvaniaNord">
+        <item>Enel Energie 1.45 lei</item>
+        <item>ELECTRICA FURNIZARE S.A. 1.60 lei</item>
+        <item>EON Energie Romania 1.86 lei</item>
+    </array>
+    <array name="TransilvaniaSud">
+        <item>Enel Energie 1.46 lei</item>
+        <item>ELECTRICA FURNIZARE S.A. 1.62 lei</item>
+        <item>EON Energie Romania 1.87 lei</item>
+    </array>
+    <string name="tv_detaliiKWh1_detaliicostkwh">  Unitatea de măsurare a energiei electrice este KWh(kilowati-ora).</string>
+    <string name="tv_detaliiKWh2_detaliicostkwh">  Prețul unui KWh variază de la furnizor la furnizor, deci este la latitudinea consumatorului să se informeze despre ofertele existente pentru
+        a alege cel mai bun preț în funcție de localitatea în care se află, tipul de locuință și consumul lunar.
+    </string>
+    <string name="tv_detaliiKWh3_detaliicostkwh">Consultați informațiile disponibile aici:</string>
+    <string name="tv_detaliiKWh4_detaliicostkwh">https://www.anre.ro/ro/info-consumatori/comparator-de-tarife</string>
+    <string name="tv_simulator">Simulator schimbare dispozitiv</string>
+    <string name="tvTip_simulator">Alegeți tipul dispozitivului</string>
+
+
+    <string name="scoateIncarcatoare_title">Deconectați dispozitivele </string>
+    <string name="scoateIncarcatoare_descriere">Deconectați încărcătorul după încărcarea dispozitivului.</string>
+    <string name="scoateIncarcatoare_review">4</string>
+    <string name="descriereScoateIncarcatoare1">
+         Deconectează încărcătoarele telefoanelor mobile sau ale acumulatorilor după finalizarea perioadei de încărcare.
+    </string>
+    <string name="descriereScoateIncarcatoare2">
+       Scoate din priză toate aparatele electronice și electrocasnice în momentul în care nu sunt folosite.
+        Chiar dacă sunt închise, dar sunt conectate la sursa de curent, echipamentele electrice continuă să consume o cantitate semnificativă de energie electrică.
+    </string>
+    <string name="descriereScoateIncarcatoare3">
+        Pentru a economisi energie electrică utilizează întrerupătorul pentru a opri alimentarea.
+    </string>
+
+
+    <string name="folosesteLed_title">Folositi becuri LED</string>
+    <string name="folosesteLed_descriere">Înlocuiți toate becurile cu unele mai economice</string>
+    <string name="folosesteLed_review">4</string>
+    <string name="folosesteLed1">
+        Becurile LED  te ajută să economisești energia electrică, rezistă mai mult timp și sunt mai sigure pentru sănătatea noastră spre deosebire de un neon,
+        în special pentru sănătatea ochilor prin tipul de lumină pe care îl oferă.
+    </string>
+    <string name="folosesteEnergieVerde_title">Folosiți energia verde</string>
+    <string name="folosesteEnergieVerde_descriere">Utilizați surse regenerabile precum: eoliană, solară sau hidraulică.</string>
+    <string name="folosesteEnergieVerde_review">5</string>
+    <string name="folosesteEnergieVerde1">
+       Optează pentru dispozitive, aparate și instalații electrice care funcționează sau generează curent electric fără a consuma electricitate de la furnizor, ci de la natură;
+    </string>
+    <string name="folosesteEnergieVerde2">
+     Panourile solare sunt soluția cea mai la îndemână pentru gospodării și pot susține activitatea întregii case
+    </string>
+
+
+    <string name="inlocuiesteElectrocasnicele_title">Înlocuiți electrocasnicele vechi</string>
+    <string name="inlocuiesteElectrocasnicele_descriere">Vă recomandăm schimbarea electrocasnicelor </string>
+    <string name="inlocuiesteElectrocasnicele_review">5</string>
+    <string name="inlocuiesteElectrocasnicele1">
+       Alege aparate electronice moderne, mai eficiente. Achiziţionaţi electrocasnice etichetate în clasa A (sau chiar A+, A++) de eficienţă energetică: aceasta înseamnă că aparatul respectiv are un randament foarte ridicat,
+        performanţe tehnice la cel mai înalt nivel şi consumă cele mai mici cantităţi de energie dintre aparatele din gama sa.
+    </string>
+    <string name="inlocuiesteElectrocasnicele2">
+       Înlocuiți următoarele electrocasnice:
+    </string>
+
+
+</resources>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_310sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_marginStart="@dimen/_1sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="@dimen/_30sdp"
+            android:id="@+id/imageView_dialogDetaliiDispozitiv"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:src="@drawable/about"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+        <TextView
+            android:layout_marginStart="@dimen/_20sdp"
+            android:id="@+id/tvInformatii_simulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Informatii"
+            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintStart_toEndOf="@id/imageView_dialogDetaliiDispozitiv"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_marginStart="@dimen/_20sdp"
+            android:id="@+id/tvInformatii1_simulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Timp de funcționare: "
+            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintStart_toEndOf="@id/imageView_dialogDetaliiDispozitiv"
+           app:layout_constraintTop_toBottomOf="@id/tvInformatii_simulator"/>
+        <TextView
+            android:layout_marginStart="@dimen/_20sdp"
+            android:id="@+id/tvInformatii2_simulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Numar dispozitive:"
+            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintTop_toBottomOf="@id/tvInformatii1_simulator"
+            app:layout_constraintStart_toEndOf="@id/imageView_dialogDetaliiDispozitiv"
+           />
+        <TextView
+            android:layout_marginStart="@dimen/_20sdp"
+            android:id="@+id/tvInformatii3_simulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Mod Functionare:"
+            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintTop_toBottomOf="@id/tvInformatii2_simulator"
+            app:layout_constraintStart_toEndOf="@id/imageView_dialogDetaliiDispozitiv"
+            />
+
+        <View
+            android:id="@+id/divider1_dialogDetaliiDispozitiv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInformatii3_simulator" />
+        <LinearLayout
+            android:id="@+id/linearLayout1_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider1_dialogDetaliiDispozitiv"
+            app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_copy_dialogSimulator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider1_dialogDetaliiDispozitiv"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Dispozitiv vechi "
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consum:"
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </LinearLayout>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/tv_consumDispozitiv1_simulator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/linearLayoutPutere_simulator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Putere:"
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </LinearLayout>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/tv_putereDispozitiv1_simulator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_15sdp" />
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/linearLayoutCost_simulator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost:"
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </LinearLayout>
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/tv_costDispozitiv1_simulator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/_40sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="NotSibling" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3_simulator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/btn_copy_dialogSimulator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider1_dialogDetaliiDispozitiv"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dispozitiv nou"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consum:"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_consumDispozitiv2_simulator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/linearLayoutPutere_dialogDetaliiDispozitiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Putere:"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/tv_putereDispozitiv2_simulator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/linearLayoutCost_dialogDetaliiDispozitiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cost:"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/tv_costDispozitiv2_simulator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Switch
+            android:id="@+id/switch_simulatorDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:shadowColor="#FFFFFF"
+            android:text=" Afiseaza detalii  economie"
+            android:textColor="?android:attr/textColorHint"
+            android:textColorHighlight="@color/myGreen"
+            android:textColorLink="@color/myGreen"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:thumbTint="@color/myGreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+            />
+    <TextView
+        android:id="@+id/tv_EconomieLunara_simulator"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Economie lunara:"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_EconomieAnuala_simulator"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Economie anuala:"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+    <Switch
+        android:id="@+id/switch_investitie_simulatorDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:shadowColor="#FFFFFF"
+        android:text=" Calculează recuperare investiție"
+        android:textColor="?android:attr/textColorHint"
+        android:textColorHighlight="@color/myGreen"
+        android:textColorLink="@color/myGreen"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:thumbTint="@color/myGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+    <TextView
+        android:id="@+id/et_valoareDispozitiv_simulatorDialog"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:hint="Tastați valoarea dispozitivului"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:inputType="number"
+        />
+    <ImageButton
+        android:id="@+id/arrow_simulatorDialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintHorizontal_bias="0.866"
+        android:visibility="gone"
+      />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:id="@+id/tv_recuperareInvestitie_simulatorDialog"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timp de recuperare al investiției"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="2">
+
+    <Button
+            android:id="@+id/btn_close_dialogSimulator"
+            android:layout_width="0dp"
+             android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_buttonlogin"
+        android:backgroundTint="@android:color/white"
+            android:text="Închide"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@id/switch_simulatorDialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    <com.royrodriguez.transitionbutton.TransitionButton
+        android:id="@+id/btn_inlocuieste_dialogSimulator"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Înlocuiește"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/switch_simulatorDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:defaultColor="#FFFFFF"
+
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</LinearLayout>

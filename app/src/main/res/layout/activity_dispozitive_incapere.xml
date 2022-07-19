@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".activities.DispozitiveIncapereActivity"
+    android:background="@color/myWhite">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarRl_dispozitiveIncapere"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/shape_toolbarlogin01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack_listViewDispozitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tooltipText="Înapoi"/>
+
+        <TextView
+            android:id="@+id/tv_incaperi_listViewDispozitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/tv_incaperi_listViewDispozitive"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+        <TextView
+            android:id="@+id/tv_consum_listViewDispozitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:gravity="center"
+            android:text="Consum"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_incaperi_listViewDispozitive"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+        <ImageButton
+            android:id="@+id/fltBtn_listViewDispozitive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.695"
+            app:layout_constraintStart_toEndOf="@id/tv_incaperi_listViewDispozitive"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tooltipText="Adaugă dispozitiv"
+            android:padding="@dimen/_5sdp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/listView_listViewDispozitive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

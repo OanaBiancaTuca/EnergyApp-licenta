@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_tipsItem"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/title_tipsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:text="TITLE"
+            android:textColor="@color/itemTitleText"
+            tools:ignore="NestedWeights"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/descriere_tipsItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="DESCRIERE"
+            android:layout_weight="1.5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/utilitate_tipsItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Utilitate: " />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_toEndOf="@id/utilitate_tipsItem"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/review_star1_tipsItem"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/cercplin"
+
+                    app:tint="@color/teal_700" />
+
+                <ImageView
+                    android:id="@+id/review_star2_tipsItem"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/cercplin"
+                    app:tint="@color/teal_700" />
+
+                <ImageView
+                    android:id="@+id/review_star3_tipsItem"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/cercplin"
+                    app:tint="@color/teal_700" />
+
+                <ImageView
+                    android:id="@+id/review_star4_tipsItem"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/cercplin"
+                    app:tint="@color/teal_700" />
+
+                <ImageView
+                    android:id="@+id/review_star5_tipsItem"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/cercplin"
+                    app:tint="@color/teal_700" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:gravity="left">
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/details_tipsItem"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="-8dp"
+        android:src="@drawable/ic_next"
+        />
+
+</LinearLayout>

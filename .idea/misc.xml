@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/ic_add.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/ic_balcony.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/ic_delete.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/ic_device.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/ic_error_faradispozitive.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/ic_touch.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/item_background.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/shape_left_panel.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/shape_login_panel.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/shape_toolbar02.xml" value="0.26615384615384613" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable-v24/spinner_style_dropdown.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/color_backgroundcolor.xml" value="0.18611111111111112" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_account.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_back_white_register.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_email_gary_login.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_home.xml" value="0.14351851851851852" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_lock_gray_login.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_logout_dashboard.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_menu_dashboard.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/ic_person_gray_register.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/item2_background.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/loginshapedittexts.xml" value="0.2101851851851852" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/shape_button01.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/shape_buttonlogin.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/shape_buttonskip.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/shape_edittext01.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/shape_left_panel.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/shape_toolbarlogin01.xml" value="0.2703125" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/shapeitemincapere.xml" value="0.14635416666666667" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/drawable/spinner_style.xml" value="0.23796296296296296" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_adauga_dispozitiv.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_adauga_incapere.xml" value="0.264" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_details_tips.xml" value="0.15555555555555556" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_dispozitive_incapere.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_fara_cont.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.176" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_ghid.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_grafic.xml" value="0.13177083333333334" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_incaperi_utilizator.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_seteaza_cost_factura.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_sfaturi.xml" value="0.15555555555555556" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_simulator.xml" value="0.264" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/activity_splash.xml" value="0.264" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/cardview_item_dispozitiv_recomandat.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/comparatieconsumdispozitive_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/custom_cookie.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/detaliicostkwh.xml" value="0.264" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/detaliidispozitiv_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/fragment_account.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/item2_background.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/layout_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/layout_spinner_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/list_group.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/list_item_sfaturi.xml" value="0.2" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/list_layout_dispozitiv.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/list_layout_incapere.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/listsimulator_layout_dispozitiv.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/select_item_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/updatedispozitiv_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/layout/updateincapere_dialog.xml" value="0.2" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/menu/navigation_menu.xml" value="0.13020833333333334" />
+        <entry key="..\:/D.A.M/EnergyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

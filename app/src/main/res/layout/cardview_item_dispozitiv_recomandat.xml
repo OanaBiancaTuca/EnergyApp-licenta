@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_16sdp"
+            >
+
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Nume"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/item_clasa"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_rates_name_label"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/item_pret"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="1000-1500"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/item_putere"
+                app:layout_constraintTop_toBottomOf="@+id/textview_watts_label"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/item_putere"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="100W"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/item_pret"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/item_clasa"
+                app:layout_constraintTop_toBottomOf="@+id/textview_putere_label"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/item_clasa"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="A"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/item_putere"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/item_name"
+                app:layout_constraintTop_toBottomOf="@+id/textview_clasa_label"
+                android:textColor="@color/black"
+               />
+
+            <TextView
+                android:id="@+id/textview_clasa_label"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="Clasa"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/item_clasa"
+                app:layout_constraintEnd_toStartOf="@+id/textview_putere_label"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textview_rates_name_label"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_putere_label"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Putere"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/item_putere"
+                app:layout_constraintEnd_toStartOf="@+id/textview_watts_label"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textview_clasa_label"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_watts_label"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Interval pret(lei)"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/item_pret"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textview_putere_label"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_rates_name_label"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Tip"
+                app:layout_constraintBottom_toTopOf="@+id/item_name"
+                app:layout_constraintEnd_toStartOf="@+id/textview_clasa_label"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/link_itemRecomandat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link"
+            android:layout_marginStart="30dp"
+            android:autoLink="all"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

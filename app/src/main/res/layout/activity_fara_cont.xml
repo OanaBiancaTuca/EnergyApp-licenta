@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FaraContActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:background="@drawable/shape_toolbarlogin01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack_faraContActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_faraContActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Calculator consum"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_5sdp"
+           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/_5sdp"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numeDispozitiv_faraContActivity"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRl"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints,NotSibling"
+
+        >
+
+    <EditText
+        android:id="@+id/etNume_faraContActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edittext01"
+        android:drawableStart="@drawable/ic_ightbulb"
+        android:drawablePadding="@dimen/_15sdp"
+        android:hint="Tip"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray01"
+        android:textSize="@dimen/_15sdp"
+
+
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numarDispozitive_faraContActivity"
+        app:layout_constraintTop_toBottomOf="@id/numeDispozitiv_faraContActivity"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+    <EditText
+        android:id="@+id/etNumar_faraContActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edittext01"
+        android:drawableStart="@drawable/ic_ightbulb"
+        android:drawablePadding="@dimen/_15sdp"
+        android:hint="Numar dispozitive"
+        android:inputType="number"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray01"
+        android:textSize="@dimen/_15sdp"
+
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/putere_faraContActivity"
+        app:layout_constraintTop_toBottomOf="@id/numarDispozitive_faraContActivity"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/etPutere_faraContActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext01"
+            android:drawableStart="@drawable/ic_waterfall"
+            android:drawablePadding="@dimen/_15sdp"
+            android:hint="Putere wati"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray01"
+            android:textSize="@dimen/_15sdp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/timpUtilizare_faraContActivity"
+        app:layout_constraintTop_toBottomOf="@id/putere_faraContActivity"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/etUtilizare_faraContActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext01"
+            android:drawableStart="@drawable/ic_waterfall"
+            android:drawablePadding="@dimen/_15sdp"
+            android:hint="Timp utilizare ore"
+            android:inputType="number"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray01"
+            android:textSize="@dimen/_15sdp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cost_faraContActivity"
+        app:layout_constraintTop_toBottomOf="@id/timpUtilizare_faraContActivity"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/etCost_faraContActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext01"
+            android:drawableStart="@drawable/ic_money"
+            android:drawablePadding="@dimen/_15sdp"
+            android:hint="Cost kWh"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray01"
+            android:textSize="@dimen/_15sdp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_marginStart="@dimen/_30sdp"
+        android:id="@+id/btnCalculeaza_faraContActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/shape_buttonlogin"
+        android:text="Calculează"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cost_faraContActivity"
+        android:padding="@dimen/_10sdp"/>
+
+    <Button
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:id="@+id/btnReseteaza_faraContActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/shape_buttonlogin"
+        android:text="Resetează"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cost_faraContActivity"
+        android:padding="@dimen/_10sdp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_zilnic_faraContActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalculeaza_faraContActivity"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Zilnic"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consum"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_cosumCalculatZilnic_faraContActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="-"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_costCalculatZilnic_faraContActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="-"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_lunar_faraContActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView_zilnic_faraContActivity"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Lunar"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consum"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_cosumCalculat_faraContActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="-"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_costCalculat_faraContActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="-"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_anual_faraContActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView_lunar_faraContActivity"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Anual"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consum"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_cosumCalculatAnual_faraContActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="-"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_costCalculatAnual_faraContActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="-"
+                    android:textColor="#31B247"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

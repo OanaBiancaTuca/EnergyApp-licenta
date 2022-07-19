@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdaugaIncapereActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/backgroundroom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack_adaugaIncapere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_incaperi_adaugaIncapere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/tv_incaperi_adaugaIncapere"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilIncapere_aduagaIncapere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRl">
+
+        <EditText
+            android:background="@drawable/shape_edittext01"
+            android:id="@+id/etIncapere_adaugaIncapere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_20sdp"
+            android:hint="@string/etIncapere_adaugaIncapere"
+            android:inputType="textPersonName|textCapWords|text"
+            android:padding="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spnTipIncapere_adaugaIncapere"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:entries="@array/tipIncapere"
+        android:padding="@dimen/_10sdp"
+        android:scrollbarSize="@dimen/_100sdp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tilIncapere_aduagaIncapere"
+
+        />
+
+    <com.royrodriguez.transitionbutton.TransitionButton
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnAdauga_adaugaIncapere"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:background="@drawable/shape_buttonlogin"
+        android:text="@string/btnAdauga_adaugaIncapere"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilIncapere_aduagaIncapere"
+        android:padding="@dimen/_10sdp"
+        app:defaultColor="#31B247"
+        app:loaderColor="@android:color/white"
+        android:textColor="@android:color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

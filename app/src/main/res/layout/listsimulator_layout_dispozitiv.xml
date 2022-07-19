@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:descendantFocusability="blocksDescendants"
+    android:elevation="@dimen/_10sdp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/rL_dispozitivItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item2_background"
+    >
+        <ImageView
+            android:id="@+id/imv_dispozitiv_dispozitivItemListSimulator"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/electronics" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/LinearLayout_dispozitivItemList"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imv_dispozitiv_dispozitivItemListSimulator"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_dispozitivItemListSimulator"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_name_dispozitivIntemList"
+                android:textColor="#000"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_consum_dispozitiveItemListSimulator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_consum_dispozitiveItemList"
+                android:textColor="#000"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

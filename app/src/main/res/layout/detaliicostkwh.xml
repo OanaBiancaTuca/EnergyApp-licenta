@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_edittext01"
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/cost"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/tv_detaliiKWh1_detaliicostkwh"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif" />
+        <View
+            android:id="@+id/divider1_dialogDetaliiDispozitiv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="?android:attr/listDivider" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/tv_detaliiKWh2_detaliicostkwh"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/tv_detaliiKWh3_detaliicostkwh"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/tv_detaliiKWh4_detaliicostkwh"
+                android:fontFamily="sans-serif"
+                android:autoLink="all"
+                android:gravity="center_vertical"/>
+            <Button
+                android:id="@+id/btn_close_detaliicostkwh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="Închide"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
