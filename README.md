@@ -1,5 +1,8 @@
 # EnergyApp-licenta
-Aplicatie mobila pentru gestionarea consumului de energie electrica/Mobile application for managing electricity consumption
+Aplicatie mobila pentru gestionarea consumului de energie electrica
+
+/Mobile application for managing electricity consumption
+
 [ghidaplicatie.pdf](https://github.com/OanaBiancaTuca/EnergyApp-licenta/files/9143626/ghidaplicatie.pdf)
 ![image](https://user-images.githubusercontent.com/84070869/182334120-e9243cec-ad48-4b99-9add-ecc074636598.png)
 ![image](https://user-images.githubusercontent.com/84070869/182334205-9f7267eb-b819-4ed0-9148-f6e32a26e931.png)
